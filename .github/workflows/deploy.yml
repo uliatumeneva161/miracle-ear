@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
       - name: Install dependencies
         working-directory: ./miracle-ear-react
@@ -29,3 +29,4 @@ jobs:
         with:
           folder: miracle-ear-react/dist
           branch: gh-pages
+          clean: true
